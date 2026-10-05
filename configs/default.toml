@@ -1,0 +1,104 @@
+# Frozen default protocol and targets; these are not measured results.
+[project]
+dataset = "PPG-DaLiA"
+seeds = [42, 123, 999]
+target_macro_mae_bpm = 6.0
+
+[run]
+schema_version = 1
+protocol_version = "final_32hz_v1"
+
+[split]
+train = ["S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10"]
+validation = ["S11", "S12"]
+test = ["S13", "S14", "S15"]
+unit = "subject"
+
+[signal]
+ppg_native_hz = 64
+acc_native_hz = 32
+model_hz = 32
+window_seconds = 8
+step_seconds = 2
+channels = ["PPG", "ACCx", "ACCy", "ACCz"]
+normalization_epsilon = 1e-8
+normalization_ddof = 0
+ppg_normalization = "per_window_zscore"
+acc_normalization = "train_continuous_per_axis_zscore"
+activity_min_fraction = 0.8
+
+[filter]
+family = "butterworth"
+prototype_order = 2
+band_hz = [0.5, 4.0]
+representation = "sos"
+mode = "sosfiltfilt_continuous_per_subject_offline"
+resample_up = 1
+resample_down = 2
+
+[baseline]
+# Final common-window protocol. D01 reference still needs a sourced, separate config.
+protocol = "final_32hz_v1"
+fft_window = "hann"
+fft_hann_symmetric = true
+fft_mean_center = true
+fft_points = 4096
+fft_search_hz = [0.6, 3.5]
+ibi_min_distance_seconds = 0.33
+ibi_prominence_std_factor = 0.3
+ibi_aggregation = "mean"
+ibi_fallback = "train_hr_median"
+benchmark_max_relative_deviation = 0.15
+
+[model]
+name = "dilated_1d_window_network"
+conv_channels = [32, 64, 64]
+kernels = [7, 5, 3]
+dilations = [1, 2, 4]
+paddings = [3, 4, 4]
+conv_bias = false
+batch_norm = true
+pool_after_conv = [1, 2]
+pool_kernel = 2
+pool_stride = 2
+head_hidden = 32
+head_activation = "relu"
+output_channels = 1
+
+[training]
+optimizer = "AdamW"
+learning_rate = 1e-3
+weight_decay = 1e-4
+loss = "L1_BPM"
+batch_size = 64
+max_epochs = 80
+patience = 10
+scheduler = "none"
+selection_metric = "validation_macro_subject_mae"
+min_delta = 0.0
+tie_policy = "earlier_epoch"
+drop_last = false
+
+[quantization]
+method = "post_training_static"
+backend = "onednn"
+calibration_split = "train"
+calibration_windows = 1000
+calibration_seed = 42
+shared_calibration_manifest = true
+calibration_batch_size = 32
+
+[evaluation]
+primary_aggregation = "macro_subject"
+secondary_aggregation = "pooled_window"
+large_error_threshold_bpm = 10.0
+seed_std_ddof = 1
+cpu_batch_size = 1
+cpu_threads = 1
+warmup_iterations = 100
+measurement_iterations = 1000
+
+[targets]
+fp32_artifact_max_bytes_exclusive = 150000
+minimum_compression_ratio = 2.5
+maximum_macro_mae_increase_bpm = 0.5

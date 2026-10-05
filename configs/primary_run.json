@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "run_id": "20261005T080438565912Z-f1bf0c7c",
+  "workspace": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c",
+  "decision_date": "2026-10-05",
+  "selection_reason": "User selected the latest completed notebook Run All as the main project result; not selected by Test accuracy or CPU speed.",
+  "scope": "Primary research results and published artifacts; does not revalidate historical UI/Wokwi evidence against these weights."
+}

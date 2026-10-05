@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "scope": "selected results of locked Test experiment, including unfavorable cases",
+  "files": [
+    {
+      "file": "three_seed_summary.csv",
+      "sha256": "c0fcc2b3983b201176069928400ada945f11a747c0f40fb19bd52598a6e29cee",
+      "bytes": 541,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/three_seed_summary.csv"
+    },
+    {
+      "file": "activities_test.csv",
+      "sha256": "24970b8d17e37a51f987d94e75f417c19ce4375ce7a1942163316198c4225835",
+      "bytes": 7203,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/activities_test.csv"
+    },
+    {
+      "file": "model_block_diagram.png",
+      "sha256": "45fcaafbdfecd4bdede467f3bd67388eb277433ff756cb959e7ce22e9e87e88a",
+      "bytes": 59654,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/model_block_diagram.png"
+    },
+    {
+      "file": "final_method_mae.png",
+      "sha256": "5894b28e2af1e561693502a39758fb863fc45ee01a8936eabdff121c505ff0bd",
+      "bytes": 39533,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/final_method_mae.png"
+    },
+    {
+      "file": "final_activity_mae.png",
+      "sha256": "f6e342fd532e46d0351380bbe317b443933f12a71f301678331222af69e467ac",
+      "bytes": 88508,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/final_activity_mae.png"
+    },
+    {
+      "file": "training_history.png",
+      "sha256": "c749b32d996e2a52be8cf77f44565a5309406eb5b63c7b3e6b40b5b9c0132e25",
+      "bytes": 131897,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/training_history.png"
+    },
+    {
+      "file": "errors_bland_altman.png",
+      "sha256": "0b45e821ca33a0e7428fc8ddc1c33e69845e7a8acf880da58ebe0776a00a6ec9",
+      "bytes": 179950,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/errors_bland_altman.png"
+    },
+    {
+      "file": "timeline_hard.png",
+      "sha256": "4c186e22465805c0af1a93f444df9fb353dbb17c533291cb1bdfd44d47e7798e",
+      "bytes": 347044,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/timeline_hard.png"
+    },
+    {
+      "file": "failure_largest_E3_error.png",
+      "sha256": "67320f561a8833b7352afc00b3e7417e08cce704844ce3e94e36eea504562c20",
+      "bytes": 182631,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/failure_largest_E3_error.png"
+    },
+    {
+      "file": "failure_largest_ACC_minus_PPG_error.png",
+      "sha256": "c2efd5e2b856fc939156dc9a4985154bcff508ddaa62ca495dba517ff67eca08",
+      "bytes": 194182,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/failure_largest_ACC_minus_PPG_error.png"
+    },
+    {
+      "file": "failure_largest_INT8_minus_FP32_error.png",
+      "sha256": "6e21f27ab21b24f494ff25ac38cb7d7b27b6f2d97b8db048a366f937fa6d233e",
+      "bytes": 190713,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/report/failure_largest_INT8_minus_FP32_error.png"
+    },
+    {
+      "file": "model_benchmark.csv",
+      "sha256": "dc2bfbf9ee17e2cb9ee1a61edef0cb7550b5158be8de7187ecc8375b19a724f3",
+      "bytes": 1822,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/benchmark/runs/20261005T083556615429Z-42dc17fc388f/model_benchmark.csv"
+    },
+    {
+      "file": "paired_benchmark.csv",
+      "sha256": "0b5d460574a890545055ab127608551f9bfe86b310769788e79e8b138996703c",
+      "bytes": 298,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/benchmark/runs/20261005T083556615429Z-42dc17fc388f/paired_benchmark.csv"
+    },
+    {
+      "file": "target_status.csv",
+      "sha256": "7d45759bec7c97822f1746e0a461926c240e3539a4bb443d7c3baf15775b2c04",
+      "bytes": 642,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/benchmark/runs/20261005T083556615429Z-42dc17fc388f/target_status.csv"
+    },
+    {
+      "file": "test_metrics.json",
+      "sha256": "977870651695a6612f984ba07a3bba22629ea0ba7f7b2349ea603a7d842c0337",
+      "bytes": 206833,
+      "origin": "read-only summary of original final index/metrics; no new experiment"
+    },
+    {
+      "file": "benchmark_runtime.json",
+      "sha256": "50f0bcf6f8850b405148504e78e6a550eae5a287e415c41ac6fd639ad306d573",
+      "bytes": 1047,
+      "origin": "read-only summary of original final index/metrics; no new experiment"
+    },
+    {
+      "file": "demo_replay.png",
+      "sha256": "d348d14e19616815223c73ca1d2eb682d047bc7c42b538f1f817e925037cf5ea",
+      "bytes": 214867,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/demo_final/browser/20261005T095715914994Z/test_replay_fp32.png"
+    },
+    {
+      "file": "demo_results.png",
+      "sha256": "2d3493ab61f42bb956ca19f2acc346a0e4da42d5747fe35143e14ae4fc3d8cb2",
+      "bytes": 145393,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/demo_final/browser/20261005T095715914994Z/research_results.png"
+    },
+    {
+      "file": "firmware_lcd.png",
+      "sha256": "c8a1ee6bd661d0e3da526d9e9d90bbd691d8565c02c5c557028d55f47338dc09",
+      "bytes": 4714,
+      "original_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/demo_ui/firmware/20261005T095240051552Z/lcd.png"
+    },
+    {
+      "file": "demo_verification.json",
+      "sha256": "428f84938802e56bcb257f2503c198fa3f71b3696bd5931dd642d6590bb38204",
+      "bytes": 3492,
+      "origin": "read-only summary of verified primary-run Test/UI/firmware evidence"
+    }
+  ],
+  "provenance": {
+    "source_workspace": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c",
+    "source_run_id": "20261005T080438565912Z-f1bf0c7c",
+    "source_indexes": {
+      "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/training_index.json": "147e61d969f3e4828faa1e179b746e4703c78f4b2cf66d7797beb16608694e97",
+      "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/ptq_index.json": "b226116a6ece18e16cb4dfc3469f8deae9b39b13758e09f906a9db838682ab7e",
+      "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/final_test/index.json": "152d8e14949c09e4563aa6141500f54f9fa67aac7b13e1d79a60a48601c7b581",
+      "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/benchmark/index.json": "0ef4601a2fdcc8fb55be5cb466c10db80b8638eb071bdf743e45583a2327afbd"
+    },
+    "protocol_lock_source": "results/notebook_runs/20261005T080438565912Z-f1bf0c7c/results/protocol_lock.json",
+    "protocol_lock_file_sha256": "d5b2e66f400e8dc7f1c3304338e0178cd8e60793bb150b98ec20b5492029e26a",
+    "protocol_hash": "bd5fe15f95ff09b790867ff7488010809091ffb20a9e67efef67917cb72d7714",
+    "config_sha256": "0930a004563836ffdb47d78dec76e598557b9fe9c27bf4ca75eddaee27e06035",
+    "preprocess_hash": "b8ddd18b640b2f2b5795baabb8b92ea5b8a1783001b0d2abf9827eb885bfa543",
+    "exported_at": "2026-10-05T09:59:46.681128+00:00"
+  },
+  "demo_included": true,
+  "selection_rule": "fixed filenames; all seeds/methods retained in metrics, no selection by good errors",
+  "limitations": [
+    "Host CPU benchmark, not MCU measurements",
+    "Offline preprocessing",
+    "No clinical or LOSO claims",
+    "D01 same-protocol benchmark remains unverified"
+  ]
+}

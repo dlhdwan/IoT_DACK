@@ -1,0 +1,12 @@
+target,value,limit,achieved
+E3 Test macro MAE mean3seed <=6 BPM,4.81617996757689,6.0,True
+mean3seed E4-E3 MAE <=0.5 BPM,0.009996110959260266,0.5,True
+FP32 seed 42 <150000 bytes,112373.0,150000.0,True
+Compression seed 42 >=2.5,2.8146023794614905,2.5,True
+FP32 seed 123 <150000 bytes,112373.0,150000.0,True
+Compression seed 123 >=2.5,2.8146023794614905,2.5,True
+FP32 seed 999 <150000 bytes,112373.0,150000.0,True
+Compression seed 999 >=2.5,2.8146023794614905,2.5,True
+E4-E3 seed 42 <=0.5 BPM,-0.003917621678978023,0.5,True
+E4-E3 seed 123 <=0.5 BPM,0.02233888417851837,0.5,True
+E4-E3 seed 999 <=0.5 BPM,0.011567070378240452,0.5,True

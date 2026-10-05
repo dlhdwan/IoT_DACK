@@ -1,0 +1,26 @@
+{
+  "runtime": {
+    "backend": "onednn",
+    "benchmark_device": "cpu",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "os": "Microsoft Windows 11 Home Single Language",
+    "platform": "Microsoft Windows 11 Home Single Language",
+    "platform_python": "Windows-10-10.0.26300-SP0",
+    "processor_identifier": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "protocol_sha256": "bd5fe15f95ff09b790867ff7488010809091ffb20a9e67efef67917cb72d7714",
+    "python": "3.11.15",
+    "threads": 1,
+    "torch": "2.10.0+cu126",
+    "window_ids_sha256": "8d763042ed83819a3d7f17f853f9c83d0b7f85bd54ef77be6ca16530dab3a401"
+  },
+  "dsp": {
+    "all_window_ppg_zscore_ms": 75.78389999980573,
+    "amortized_ms_per_window": 0.026716987394585216,
+    "continuous_filter_resample_acc_ms": 45.00360001111403,
+    "n_samples_native_ppg": 579072,
+    "n_windows": 4521,
+    "scope": "offline record cost; amortized cost is not streaming latency",
+    "subject_id": "S11"
+  },
+  "scope": "host CPU; no MCU/energy claims"
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "PPG-DaLiA final project",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-ili9341", "id": "screen", "top": 0, "left": 230, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "" ],
+    [ "esp:RX", "$serialMonitor:TX", "" ],
+    [ "screen:VCC", "esp:3V3", "red" ],
+    [ "screen:GND", "esp:GND.1", "black" ],
+    [ "screen:CS", "esp:5", "orange" ],
+    [ "screen:D/C", "esp:27", "purple" ],
+    [ "screen:MOSI", "esp:23", "green" ],
+    [ "screen:SCK", "esp:18", "blue" ]
+  ],
+  "serialMonitor": { "display": "terminal", "newline": "lf", "convertEol": true }
+}
